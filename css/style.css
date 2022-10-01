@@ -1,36 +1,38 @@
+/* arrange the contents as flexboxes, and set to 100% of viewport */
 body
 {
   display: flex;
   flex-direction: column; 
-  min-height: 100vh; /*make content 100% of the viewport*/
-  font-family: 'Philosopher', 'Rufina', 'Spectral', serif;
-  font-size: 36px;
-  font-weight: bold;
+  min-height: 100vh; 
   margin: 0;
-  
+
+  font-family: 'Philosopher', 'Rufina', 'Spectral',Trebuche MS, serif;
+  font-size: 36px;
 }
 
-
+/* flex allow the header to moved around (left to right) */
 header {
-  font-size: 50px;
   display: flex;
-  
+  font-size: 50px;
 }
 
+/* gives space around the header and main */
 header, main {
-  font-family: 'Karla', sans-serif;
+  padding: 1rem;
+
+  font-family: 'Karla', Arial, Helvetica, sans-serif; 
 }
 
-
+/* overall nav style, set surrounding space, keeps the list from overflowing */
 nav ul {
   display: flex;
-  padding: 1rem;
-  list-style-type: none;
   flex-wrap: wrap;
-  color: dimgray;
+  padding: 1rem;
+
+  list-style-type: none;
   font-size: 16px;
 }
-
+ /* list style and orientation - centers the lists */
 .container {
   display: flex;
   flex-direction: row;
@@ -39,45 +41,45 @@ nav ul {
   align-content: space-between;
 }
 
-
+/* This gives space between the menu options (list) */
 li {
   margin: 1em;
 }
 
-header, main { /* delete later */
-  /* border: 1px solid rebeccapurple; */
-  padding: 1rem;
+/* default link style - unvisited */
+a {
+  text-decoration: none;
+  color: dimgray;
 }
 
-main 
-{
+/* link changes color when mouse hovers */
+a:hover {
+  color: darkslategray;
+}
+
+/* background color and picture styles */
+main {
   flex: auto;
+
   color: white;
-
-
-  
-  
   text-align: center;
   
-  /* margin: auto;*/
-
   background-image: url(https://picsum.photos/id/681/5000/3000);
   background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; 
-
 }
 
+/* text style */
 p {
   font-size: 20px;
 }
 
-/* Sticky container */
-
-
+/* Sticky container - sets orientation to center and surrounding space */
 footer {
-  font-size: 13px;
   margin: 2rem;
+
+  font-size: 13px;
   text-align: center;
 }
