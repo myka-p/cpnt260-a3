@@ -1,0 +1,83 @@
+body
+{
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; /*make content 100% of the viewport*/
+  font-family: 'Philosopher', 'Rufina', 'Spectral', serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  
+}
+
+
+header {
+  font-size: 50px;
+  display: flex;
+  
+}
+
+header, main {
+  font-family: 'Karla', sans-serif;
+}
+
+
+nav ul {
+  display: flex;
+  padding: 1rem;
+  list-style-type: none;
+  flex-wrap: wrap;
+  color: dimgray;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+}
+
+
+li {
+  margin: 1em;
+}
+
+header, main { /* delete later */
+  /* border: 1px solid rebeccapurple; */
+  padding: 1rem;
+}
+
+main 
+{
+  flex: auto;
+  color: white;
+
+
+  
+  
+  text-align: center;
+  
+  /* margin: auto;*/
+
+  background-image: url(https://picsum.photos/id/681/5000/3000);
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top; 
+
+}
+
+p {
+  font-size: 20px;
+}
+
+/* Sticky container */
+
+
+footer {
+  font-size: 13px;
+  margin: 2rem;
+  text-align: center;
+}
